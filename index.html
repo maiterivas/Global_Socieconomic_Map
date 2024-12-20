@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Global Socieoconomic Factors Map</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="video.html">Video</a>
+            <a href="documentation.html">Documentation</a>
+        </nav>
+    </header>
+
+    <div class="centered">
+        <label for="dataset-select">Select Dataset:</label>
+        <select id="dataset-select">
+            <option value="child_mort">Child Mortality</option>
+            <option value="health">Health</option>
+            <option value="life_expec">Life Expectancy</option>
+            <option value="income">Income</option>
+            <option value="inflation">Inflation</option>
+            <option value="gdpp">GDP per Capita</option>
+        </select>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
